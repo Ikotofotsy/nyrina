@@ -1,0 +1,145 @@
+*,::before,::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s ease-in-out;
+}
+
+/*=================HEADER==================*/
+/*-------barre de bavigation-------*/
+.barre_navigation{
+	/*background: #4A4950;*/
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 25px 20px;
+}
+
+.barre_navigation h3{
+	color: white;
+	font-family: 'Maiandra GD';
+	letter-spacing: 8px;
+}
+.barre_navigation a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-family: 'Maiandra GD';
+	margin: 0 5px;
+
+}
+
+.contact a{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: white;
+	margin: 0 5px;
+}
+/*------Couverture------*/
+
+.couverture{
+	position: relative;
+	bottom: 200px;
+	width: 100%;
+	background: url(img/couv1.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 300px 0 200px 0;
+	z-index: 1;
+}
+
+.titre{
+	width: 70%;
+	margin:  auto;
+}
+.couverture h1{
+	font-family: 'Trajan Pro';
+	color: white;
+	font-size: 9vw;
+	margin: auto;
+	text-align: center;
+	line-height: 100px;
+}
+
+.couverture span{
+	font-family: 'Colonna MT';
+	font-size: 3vw;
+	letter-spacing: 15px;
+	border-top: 1px solid white;
+	padding: 30px;
+}
+
+.couverture a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+	font-family: 'Maiandra GD';
+	color: white;
+	background: #8E2729;
+	width: 20%;
+	margin: 0 auto;
+	padding: 20PX 10px;
+	border-radius: 30px;
+}
+@media screen and (max-width: 900px) {
+	.couverture a{
+		width: 30%;
+	}
+}
+/*=================MAIN==================*/
+
+/*-----profil-------*/
+.profil{
+	position: relative;
+	bottom: 300px;
+	width: 80%;
+	margin: 0 auto;
+	z-index: 2;
+}
+.nom p{
+	color: white;
+	font-family: 'Maiandra GD';
+	text-align: center;
+	padding: 10px 0;
+}
+.photo_de_profil{
+	position: relative;
+	bottom: 50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: white;
+	margin: 0 auto;
+}
+
+.general{
+	background: #65646A;
+}
+
+.autre{
+	background: #4A4950;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.age div,.job div,.school div{
+	width: 30px;
+	height: 30px;
+	background: white;
+	margin: 30px auto;
+	border-radius: 50%;
+}
+.autre p{
+	color: white;
+	font-family: 'Maiandra GD';
+	text-align: center;
+}
+
+.autre div{
+	flex-basis: 30%;
+}

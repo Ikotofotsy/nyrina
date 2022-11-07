@@ -300,6 +300,66 @@ h2
 
 
 
+/*TRAJET*/
+.tige
+{
+	height: 10px;
+	width: 90%;
+	margin:300px auto;
+	background: linear-gradient(to right,#e3d5e9,#ad0ff2,#fff0);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tige .noeud
+{
+
+	margin: 0;
+	width: 25px;
+	height: 25px;
+	background: white;
+	border:3px solid #e3d5e9 ;
+	border-radius: 50%;
+}
+
+.tige .item
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tige div:nth-child(odd)
+{
+	bottom: 25px;
+}
+.tige div:nth-child(even)
+{
+	top: 25px;
+}
+.tige p
+{
+	color: white;
+	font-family: 'candara';
+}
+
+.tige span
+{
+	display: block;
+	background: white;
+	margin: 0 auto;
+	width: 2px;
+	height: 50px;
+}
+
+.tige .fin
+{
+	background: transparent;
+	border: 0;
+}
 
 
 

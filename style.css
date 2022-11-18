@@ -6,7 +6,7 @@
 }
 
 body{
-	background: linear-gradient(45deg,#8513b4,#4f2661,#1a0a21,#0e0b0f);
+	background: linear-gradient(45deg,#8513b4,#4f2661,#4f2661,#1a0a21,#0e0b0f);
 }
 
 
@@ -306,7 +306,7 @@ h2
 	height: 10px;
 	width: 90%;
 	margin:300px auto;
-	background: linear-gradient(to right,#e3d5e9,#ad0ff2,#fff0);
+	background: linear-gradient(to right,#e3d5e9,#ad0ff277,#fff0);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -427,3 +427,76 @@ h2
 	width: 20%;
 }
 
+
+
+
+
+/*PROJECT*/
+.project
+{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+h2:nth-child(4)
+{
+	text-align: center;
+}
+
+.text_pro
+{
+	color: white;
+	font-family: 'candara';
+	text-align: center;
+}
+
+.cadre_pro,.text_pro
+{
+	width: 50%;
+}
+
+.cadre_pro
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.cadre_pro div
+{
+	border: 2px solid white;
+	position: relative;
+}
+
+.cadre_pro div:first-child
+{
+	width: 250px;
+	height: 250px;
+	left: 30%;
+}
+.cadre_pro div:nth-child(2)
+{
+	width: 150px;
+	height: 150px;
+	left: 20%;
+}
+.cadre_pro div:nth-child(3)
+{
+	width: 100px;
+	height: 100px;
+	left: 15%;
+}
+.cadre_pro div:last-child
+{
+	width: 50px;
+	height: 50px;
+	left: 10%;
+}
+
+img
+{
+	width: 100%;
+}

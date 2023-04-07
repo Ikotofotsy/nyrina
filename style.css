@@ -20,12 +20,12 @@
 
 :root{
 	--dark-bg-color:#1f242d;
-	--clair-bg-color:#323946;
+	--clair-text-color:#323946;
 	--text-color-1:#53BF9D;
 	--text-color-2:#F94C66;
 	--text-color-3:#BD4291;
 	--text-color-4:#FFC54D;
-	--text-color:#fff;
+	--dark-text-color:#fff;
 
 }
 
@@ -35,7 +35,7 @@ html{
 }
 body{
 	background-color: var(--dark-bg-color);
-	color: var(--text-color);
+	color: var(--dark-text-color);
 }
 
 header{
@@ -83,6 +83,14 @@ section{
 .home-content h3{
 	font-size: 3.2rem;
 	font-weight: 700;
+}
+
+h3 span{
+	color: var(--text-color-1);
+}
+
+.home-content h3:nth-of-type(2){
+	margin-bottom: 2rem;
 }
 .home-content h1{
 	font-size: 5.6rem;
@@ -132,4 +140,20 @@ section{
 }
 .social-media a:last-child:hover{
 	background: url(img/icone/github-53BF9D-hover.png);
+}
+
+.btn-cv{
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background-color: var(--text-color-1);
+	border-radius: 4rem;
+	box-shadow: 0 0 1rem var(--text-color-1);
+	font-size: 1.6rem;
+	color: var(--clair-text-color);
+	letter-spacing: .1rem;
+	font-weight: 600;
+	transition: .5s ease;
+}
+.btn-cv:hover{
+	box-shadow: none;
 }

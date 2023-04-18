@@ -1,0 +1,27 @@
+:root{
+    --text-color-1:#53BF9D;
+}
+.social-media a:first-child{
+	background: url(img/icone/whatsapp-53BF9D-hover.png);
+}
+.social-media a:first-child:hover{
+	background: url(img/icone/whatsapp-53BF9D.png);
+}
+.social-media a:nth-child(2){
+	background: url(img/icone/facebook-53BF9D-hover.png);
+}
+.social-media a:nth-child(2):hover{
+	background: url(img/icone/facebook-53BF9D.png);
+}
+.social-media a:nth-child(3){
+	background: url(img/icone/linkedin-53BF9D-hover.png);
+}
+.social-media a:nth-child(3):hover{
+	background: url(img/icone/linkedin-53BF9D.png);
+}
+.social-media a:last-child{
+	background: url(img/icone/github-53BF9D-hover.png);
+}
+.social-media a:last-child:hover{
+	background: url(img/icone/github-53BF9D.png);
+}

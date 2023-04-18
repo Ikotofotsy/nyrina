@@ -5,18 +5,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PortFolio</title>
+	<link rel="stylesheet" href="dark-theme.css" class="style-theme" >
+	<link rel="stylesheet" href="color-theme-1.css" class="style-color">
+	
 	<link rel="stylesheet" href="style.css">
+
+	<script src="jquery-3.6.4.min.js"></script>
+	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	
+	<script src="script.js"></script>
 </head>
 <body>
+	<div class="themes">
+		<div class="themes-DC">
+			<div class="dark">dark</div>
+			<div class="clair">clair</div>
+		</div>
+		<div class="themes-colors">
+			<div class="color-1">color-1</div>
+			<div class="color-2">color-2</div>
+			<div class="color-3">color-3</div>
+			<div class="color-4">color-4</div>
+		</div>
+	</div>
 	<header>
-		<a href="#" class="logo">Portfolio</a>
-
+		<a href="#" class="logo">Portfolio.</a>
+		<img class="icone-menu" src="img/icone/menu-53BF9D.png" alt="">
 		<nav>
-			<a href="#Acceuil">Acceuil</a>
-			<a href="#Apropos">A propos</a>
-			<a href="#Services">Services</a>
-			<a href="#Portfolio">Portfolio</a>
-			<a href="#Contact">Contact</a>
+			<a href="#home">Acceuil</a>
+			<a href="#about">A propos</a>
+			<a href="#services">Services</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact</a>
 		</nav>
 	</header>
 
@@ -24,7 +44,7 @@
 		<div class="home-content">
 			<h3>Bonjour! Je m'appelle</h3>
 			<h1>Tsiory Ny Rina</h1>
-			<h3>Et je suis un <span>Developpeur Frontend</span></h3>
+			<h3>Et je suis un <span id="type-text"></span></h3>
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet?</p>
 			<div class="social-media">
 				<a href="#"></a>
@@ -32,11 +52,147 @@
 				<a href="#"></a>
 				<a href="#"></a>
 			</div>
-			<a href="#" class="btn-cv">Download CV</a>
+			<a href="#" class="btn">Telecharger mon CV</a>
 		</div>
 		<div class="home-img">
 			<img src="img/profil-53BF9D.png" alt="">
 		</div>
 	</section>
+
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/apropos-53BF9D.png" alt="">
+		</div>
+
+		<div class="about-content">
+			<h2 class="heading">A propos de <span>moi</span></h2>
+			<h3>Developpeur Frontend</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perspiciatis voluptatum deserunt, illum deleniti vitae repellat nemo? Ut, maiores molestiae Lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, voluptatum?</p>
+			<a href="#" class="btn">En savoir plus</a>
+		</div>
+	</section>
+
+	<section class="services" id="services">
+		<h2 class="heading">Mes <span>services</span></h2>
+
+		<div class="services-content animebottom">
+			<div class="services-box">
+				<img class="balise-img" src="img/icone/balise-html-53BF9D.png" alt="">
+				<h3>Developpement Web</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cupiditate a ab iure dolorem magnam reprehenderit provident blanditiis velit et!</p>
+				<a href="#" class="btn">En savoir plus</a>
+			</div>
+
+			<div class="services-box">
+				<img class="logiciel-img" src="img/icone/logiciel-53BF9D.png" alt="">
+				<h3>Developpement Logiciel</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cupiditate a ab iure dolorem magnam reprehenderit provident blanditiis velit et!</p>
+				<a href="#" class="btn">En savoir plus</a>
+			</div>
+
+			<div class="services-box">
+				<img class="mobile-img" src="img/icone/developpement-mobile-53BF9D.png" alt="">
+				<h3>Application Mobile</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cupiditate a ab iure dolorem magnam reprehenderit provident blanditiis velit et!</p>
+				<a href="#" class="btn">En savoir plus</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio" id="portfolio">
+		<h2 class="heading">Projets <span>Recents</span></h2>
+
+		<div class="portfolio-content animebottom">
+			<div class="portfolio-box">
+				<img src="img/pexels-lukas-669613.jpg" alt="">
+				<div class="portfolio-layer">
+					<h4>Web design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
+					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
+				</div>
+			</div>
+
+			<div class="portfolio-box">
+				<img src="img/pexels-lukas-669613.jpg" alt="">
+				<div class="portfolio-layer">
+					<h4>Web design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
+					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
+				</div>
+			</div>
+
+			<div class="portfolio-box">
+				<img src="img/pexels-lukas-669613.jpg" alt="">
+				<div class="portfolio-layer">
+					<h4>Web design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
+					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
+				</div>
+			</div>
+
+			<div class="portfolio-box">
+				<img src="img/pexels-lukas-669613.jpg" alt="">
+				<div class="portfolio-layer">
+					<h4>Web design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
+					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
+				</div>
+			</div>
+
+			<div class="portfolio-box">
+				<img src="img/pexels-lukas-669613.jpg" alt="">
+				<div class="portfolio-layer">
+					<h4>Web design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
+					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
+				</div>
+			</div>
+
+			<div class="portfolio-box">
+				<img src="img/pexels-lukas-669613.jpg" alt="">
+				<div class="portfolio-layer">
+					<h4>Web design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
+					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+
+	<section class="contact" id="contact">
+		<h2 class="heading">Contactez <span>moi !</span></h2>
+
+		<form action="" class="animebottom">
+			<div class="input-box">
+				<input type="text" name="" id="" placeholder="Votre nom">
+				<input type="email" name="" id="" placeholder="Addresse e-mail">
+			</div>
+			<div class="input-box">
+				<input type="text" name="" id="" placeholder="Telephone">
+				<input type="text" name="" id="" placeholder="Sujet">
+			</div>
+			<textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+			<button class="btn">Envoyer</button>
+		</form>
+	</section>
+
+	<footer>
+		<div class="footer-text">
+			<p>Copyright &copy; 2023 by Tsiory Ny Rina | All Rigths Reserved</p>
+		</div>
+		<div class="footer-iconTop">
+			<a href="#home"><img src="img/icone/arrowhead-up-53BF9D.png" alt=""></a>
+		</div>
+	</footer>
+	<script>
+		var typed = new Typed('#type-text', {
+			strings: ['Developper Frontend', 'Developper Backend', 'Designer'], // les textes à afficher
+			typeSpeed: 100, // la vitesse de frappe
+			backSpeed: 30, // la vitesse de suppression
+			loop: true // pour répéter le texte en boucle
+		});
+	
+	</script>
 </body>
 </html>

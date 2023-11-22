@@ -4,72 +4,171 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PortFolio</title>
+	<title>Tsiory Ny Rina</title>
+	<link rel="stylesheet" href="root.css">
+	<link rel="stylesheet" href="theme.css">
+	<link rel="stylesheet" href="navigation.css">
+	<link rel="stylesheet" href="accueil.css">
+	<link rel="stylesheet" href="apropos.css">
+	<link rel="stylesheet" href="formation.css">
+	<link rel="stylesheet" href="services.css">
+	<link rel="stylesheet" href="portfolio.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="responsive.css">
+
 	<link rel="stylesheet" href="dark-theme.css" class="style-theme" >
 	<link rel="stylesheet" href="color-theme-1.css" class="style-color">
 	
 	<link rel="stylesheet" href="style.css">
+	<!--import icones-->
 
-	<script src="jquery-3.6.4.min.js"></script>
-	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	<!--import fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 	
-	<script src="script.js"></script>
+	
+	
 </head>
 <body>
 	<div class="themes">
 		<div class="themes-DC">
-			<div class="dark">dark</div>
-			<div class="clair">clair</div>
+			<img src="img/icone/mode-sombre.png" alt="">
 		</div>
 		<div class="themes-colors">
-			<div class="color-1">color-1</div>
-			<div class="color-2">color-2</div>
-			<div class="color-3">color-3</div>
-			<div class="color-4">color-4</div>
+			<img src="img/icone/themes-53BF9D.png" alt="">
 		</div>
 	</div>
+	<div class="select-color">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
 	<header>
-		<a href="#" class="logo">Portfolio.</a>
+		<a href="#" class="logo">Portfolio <span>.</span></a>
 		<img class="icone-menu" src="img/icone/menu-53BF9D.png" alt="">
 		<nav>
 			<a href="#home">Acceuil</a>
-			<a href="#about">A propos</a>
+			<a href="#about">Profil</a>
+			<a href="#diplome-formation">Diplôme et Formation</a>
 			<a href="#services">Services</a>
 			<a href="#portfolio">Portfolio</a>
-			<a href="#contact">Contact</a>
 		</nav>
 	</header>
 
 	<section id="home" class="home">
 		<div class="home-content">
-			<h3>Bonjour! Je m'appelle</h3>
-			<h1>Tsiory Ny Rina</h1>
-			<h3>Et je suis un <span id="type-text"></span></h3>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet?</p>
-			<div class="social-media">
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
+			<h1>TSIORY NY RINA</h1>
+			<h3>Développeur Web</br><span id="type-text"></span></h3>
+			<ul>
+				<li>Concéption de base de données</li>
+				<li>Intégration Web</li>
+				<li>Développement Web</li>
+			</ul>
+			<div class="reseaux-sociaux">
+				<a title="linkedin" href="https://www.linkedin.com/in/tsiory-ny-rina/"><ion-icon name="logo-linkedin"></ion-icon></a>
+				<a title="github" href="https://github.com/Ikotofotsy"><ion-icon name="logo-github"></ion-icon></a>
+				<a title="facebook" href="https://www.facebook.com/tsiorynirina.ratovoarison/"><ion-icon name="logo-facebook"></ion-icon></a>
+				<a title="Phone" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+				
 			</div>
-			<a href="#" class="btn">Telecharger mon CV</a>
+			
 		</div>
 		<div class="home-img">
-			<img src="img/profil-53BF9D.png" alt="">
+			<img src="img/profil-1-53BF9D.png" alt="">
 		</div>
 	</section>
 
 	<section class="about" id="about">
-		<div class="about-img">
-			<img src="img/apropos-53BF9D.png" alt="">
+		<div class="aboutL">
+			<div class="about-img">
+				<img src="img/apropos-53BF9D.png" alt="">
+			</div>
+	
+			<div class="about-content">
+				<h2 class="heading"><span>Infos</span></h2>
+				<h3>Étudiant en informatique passionné par le développement de logiciels</h3>
+				<p>
+					En tant qu'étudiant en informatique en troisième année à l'École Nationale d'Informatique Fianarantsoa, je possède des notions en langages de programmation tels que le C, Python, Javascript, Java et <b>en particulier le PHP</b>, avec une bonne connaissance en POO. Mon parcours académique met l'accent sur l'informatique générale, avec une compréhension approfondie des concepts fondamentaux, des structures de données et des algorithmes.
+				</p>
+				<p>
+					Développeur web passionné et motivé, je suis capable de m'adapter rapidement et de travailler en équipe.
+				</p>
+				<a href="https://www.linkedin.com/in/tsiory-ny-rina/" class="btn">Linkedin</a>
+				<!--<a href="#profil" class="btn">En savoir plus</a>-->
+			</div>
 		</div>
+		
+	</section>
 
-		<div class="about-content">
-			<h2 class="heading">A propos de <span>moi</span></h2>
-			<h3>Developpeur Frontend</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perspiciatis voluptatum deserunt, illum deleniti vitae repellat nemo? Ut, maiores molestiae Lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, voluptatum?</p>
-			<a href="#" class="btn">En savoir plus</a>
+	<section id="diplome-formation" class="diplome-formation"> 
+		<div class="foramtion">
+			<h2 class="heading">Formation <span>et Expérience</span></h2>
+			<div class="container-formation">
+				<h3>Formation</h3>
+				<div class="list-formation">
+					<div class="item-formation">
+						<div class="media">
+							<a href="#"><img src="img/media/Alternative2.png" alt=""></a>
+						</div>
+						<div class="information">
+								<h4>Ecole Nationale d'Informatique (ENI) Fianarantsoa</h4>
+							<ul>
+								<li>Informatqiue Général</li>
+								<li>Oct 2021 - Aujourd'hui</li>
+								<li>
+									<p>
+										L’Ecole Nationale d’Informatique, en abrégé ENI, est un établissement d’enseignement supérieur rattaché académiquement et administrativement à l’Université de Fianarantsoa.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item-formation">
+						<div class="media">
+							<a href="#"><img src="img/media/dtc.png" alt=""></a>
+						</div>
+						<div class="information">
+							<h4>Digital Tranning Center (DTC)</h4>
+							<ul>
+								<li>Formation PHP</li>
+								<li>Sept 2023 - Nov 2023 (3 mois)</li>
+								<li>
+									<p>
+										Digital Tranning Center est une centre de formation professionnelle spécialisé dans les domaines de l'informatique et du développement. 
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="experience">
+			<h3>Expérience</h3>
+			<div class="container-experience">
+				<div class="list-experience">
+					<div class="item-experience">
+						<div class="media">
+							<a href="#"><img src="img/media/smiCall.png" alt=""></a>
+						</div>
+						<div class="information">
+							<h4>Stagiaire</h4>
+							<ul>
+								<li>S&MI Call</li>
+								<li>Sept 2023 - Nov 2023 (3 mois)</li>
+								<li>Création d'un site Web pour suivi d'évaluation et géstion des employées opérationnelles</li>
+								<li>
+									<p>
+										S&MI Call est une société d’externalisation et de sous traitance située à Antananarivo, Madagascar. La société sous traite directement avec les sociétés située en France.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	</section>
 
 	<section class="services" id="services">
@@ -77,24 +176,44 @@
 
 		<div class="services-content animebottom">
 			<div class="services-box">
-				<img class="balise-img" src="img/icone/balise-html-53BF9D.png" alt="">
-				<h3>Developpement Web</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cupiditate a ab iure dolorem magnam reprehenderit provident blanditiis velit et!</p>
-				<a href="#" class="btn">En savoir plus</a>
+				<span class="cadre">
+					<img class="base-img" src="img/icone/base-de-donne-53BF9D.png" alt="">
+				</span>
+				<h3>Concéption de base de données</h3>
+				<hr>
+				<h4>Vos données, mon expertise.</h4>
+				<p>
+					En me confiant vos données, vous faites le choix de l'expertise et de la fiabilité. Je vous aiderai à faire de vos données un atout pour votre entreprise.
+				</p>
+				<!-- <a href="#" class="btn">En savoir plus</a> -->
 			</div>
 
 			<div class="services-box">
-				<img class="logiciel-img" src="img/icone/logiciel-53BF9D.png" alt="">
-				<h3>Developpement Logiciel</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cupiditate a ab iure dolorem magnam reprehenderit provident blanditiis velit et!</p>
-				<a href="#" class="btn">En savoir plus</a>
+				<span class="cadre">
+					<img class="integration-img" src="img/icone/balise-html-53BF9D.png" alt="">
+				</span>
+				
+				<h3>Intégration Web</h3>
+				<hr>
+				<h4>Votre site web, prêt à l'emploi</h4>
+				<p>
+					Je vous propose de créer votre site web sur mesure, en tenant compte de vos besoins et de vos objectifs.
+				</p>
+				<!-- <a href="#" class="btn">En savoir plus</a> -->
 			</div>
 
 			<div class="services-box">
-				<img class="mobile-img" src="img/icone/developpement-mobile-53BF9D.png" alt="">
-				<h3>Application Mobile</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cupiditate a ab iure dolorem magnam reprehenderit provident blanditiis velit et!</p>
-				<a href="#" class="btn">En savoir plus</a>
+				<span class="cadre">
+					<img class="web-img" src="img/icone/logiciel-53BF9D.png" alt="">
+				</span>
+				
+				<h3>Développement Web</h3>
+				<hr>
+				<h4>Un site web interactif et performant</h4>
+				<p>
+					Mon objectif est de vous fournir un site web prêt à démarrer, qui vous permettra de développer votre entreprise ou votre activité.
+				</p>
+				<!-- <a href="#" class="btn">En savoir plus</a> -->
 			</div>
 		</div>
 	</section>
@@ -102,97 +221,57 @@
 	<section class="portfolio" id="portfolio">
 		<h2 class="heading">Projets <span>Recents</span></h2>
 
-		<div class="portfolio-content animebottom">
-			<div class="portfolio-box">
-				<img src="img/pexels-lukas-669613.jpg" alt="">
-				<div class="portfolio-layer">
-					<h4>Web design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
-					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
+		<p class="information">En cours ...</p>
+		<!-- <div class="animebottom" id="vue">
+			<div class="portfolio-content">
+				<div v-for="img in images">
+					<img :src="img" alt="" @click="getUrl(img)">
 				</div>
 			</div>
 
-			<div class="portfolio-box">
-				<img src="img/pexels-lukas-669613.jpg" alt="">
-				<div class="portfolio-layer">
-					<h4>Web design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
-					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
-				</div>
+			<div class="boxImage" v-if="img_src">
+				{{ img_src }}
 			</div>
 
-			<div class="portfolio-box">
-				<img src="img/pexels-lukas-669613.jpg" alt="">
-				<div class="portfolio-layer">
-					<h4>Web design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
-					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
-				</div>
-			</div>
-
-			<div class="portfolio-box">
-				<img src="img/pexels-lukas-669613.jpg" alt="">
-				<div class="portfolio-layer">
-					<h4>Web design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
-					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
-				</div>
-			</div>
-
-			<div class="portfolio-box">
-				<img src="img/pexels-lukas-669613.jpg" alt="">
-				<div class="portfolio-layer">
-					<h4>Web design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
-					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
-				</div>
-			</div>
-
-			<div class="portfolio-box">
-				<img src="img/pexels-lukas-669613.jpg" alt="">
-				<div class="portfolio-layer">
-					<h4>Web design</h4>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, optio.</p>
-					<a href=""><img src="img/icone/lien-white.png" alt=""></a>
-				</div>
+			<div>
+				<i @click="preced(img_src)">Precedent</i>
+				<i @click="next(img_src)">Suivant</i>
 			</div>
 		</div>
-	
-	</section>
-
-	<section class="contact" id="contact">
-		<h2 class="heading">Contactez <span>moi !</span></h2>
-
-		<form action="" class="animebottom">
-			<div class="input-box">
-				<input type="text" name="" id="" placeholder="Votre nom">
-				<input type="email" name="" id="" placeholder="Addresse e-mail">
-			</div>
-			<div class="input-box">
-				<input type="text" name="" id="" placeholder="Telephone">
-				<input type="text" name="" id="" placeholder="Sujet">
-			</div>
-			<textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
-			<button class="btn">Envoyer</button>
-		</form>
+	 -->
 	</section>
 
 	<footer>
 		<div class="footer-text">
-			<p>Copyright &copy; 2023 by Tsiory Ny Rina | All Rigths Reserved</p>
+			<p>Tsiory Ny Rina &copy; 2023 </p>
 		</div>
 		<div class="footer-iconTop">
 			<a href="#home"><img src="img/icone/arrowhead-up-53BF9D.png" alt=""></a>
 		</div>
 	</footer>
+	
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<script src="jquery-3.6.4.min.js"></script>
+	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	
+	<script src="script.js"></script>
+
+	
+
 	<script>
 		var typed = new Typed('#type-text', {
-			strings: ['Developper Frontend', 'Developper Backend', 'Designer'], // les textes à afficher
+			strings: ['PHP-Laravel', 'Typescript-VueJS'], // les textes à afficher
 			typeSpeed: 100, // la vitesse de frappe
 			backSpeed: 30, // la vitesse de suppression
 			loop: true // pour répéter le texte en boucle
 		});
 	
 	</script>
+
+
+	<script src="vue.min.js_2.6.11/cdnjs/vue.min.js"></script>
+	<script src="js/vue.js"></script>
 </body>
 </html>

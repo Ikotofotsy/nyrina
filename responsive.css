@@ -1,0 +1,187 @@
+/*______________________RESPONSIVE___________________*/
+@media (max-width:1200px){
+	html{
+		font-size: 55%;
+	}
+}
+@media (max-width:1000px)
+{
+	header{
+		padding: 2rem 3%;
+	}
+
+	section{
+		padding: 10rem 3% 2rem;
+	}
+	footer{
+		padding: 2rem 3%;
+	}
+	.services h2,.portfolio h2{
+		margin-bottom: 3rem;
+	}
+	.services,.portfolio{
+		margin-bottom: 7rem;
+	}
+}
+@media (max-width:840px){
+	.portfolio-content{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.reseaux-sociaux{
+		width: 25vw;
+	}
+
+}
+@media (max-width:700px){
+	.home-content h1{
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width:630px){
+	.reseaux-sociaux{
+		width: 30vw;
+	}
+	.icone-menu{
+		display: block;
+	}
+	nav{
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1rem 3%;
+		background: var(--bg-nav);
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+	}
+	nav.active{
+		display: block;
+	}
+
+	nav a{
+		display: block;
+		font-size: 2rem;
+		margin: 3rem 0;
+	}
+	.home{
+		flex-direction: column;
+	}
+	.aboutL{
+		flex-direction: column-reverse;	
+	}
+
+	.home-content h3{
+		font-size: 2.6rem;
+	}
+	.home-content h1{
+		font-size: 2rem;
+	}
+	.home-img img,.about-img img{
+		width: 70vw;
+		margin-top: 4rem;
+	}
+
+	.item-formation, .item-experience{
+		flex-direction: column;
+	}
+	
+}
+
+
+
+@media (max-width:560px){
+	.reseaux-sociaux{
+		width: 35vw;
+	}
+	.portfolio-content{
+		grid-template-columns: 1fr;
+	}
+
+	
+}
+
+@media (max-width:450px)
+{
+	.reseaux-sociaux{
+		width: 45vw;
+	}
+	html{
+		font-size: 50%;
+	}
+	.contact form .input-box input{
+		width: 100%;
+	}
+
+	footer{
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+}
+
+.animation-from-top
+{	
+	animation: from-top 1.5s;
+}
+
+.animation-from-bottom
+{
+	animation: from-bottom 1.5s;
+}
+
+.animation-from-bottom-text
+{
+	animation: from-bottom-text 1.5s;
+}
+
+.animation-from-right{
+	animation:from-right 1.5s;
+}
+
+.animation-from-left{
+	animation:from-left 1.5s;
+}
+.animation-about-img{
+	animation: animImg 1.5s;
+}
+
+@keyframes from-top {
+	0%{
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes from-bottom {
+	0%{
+		opacity: 0;
+		transform: translateY(100%);
+	}
+}
+
+@keyframes from-bottom-text {
+	0%{
+		opacity: 0;
+		transform: translateY(30%);
+	}
+}
+
+@keyframes from-right {
+	0%{
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}
+@keyframes from-left {
+	0%{
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes animImg {
+	0%{
+		opacity: 0;
+		transform: translateY(50%) rotate(45deg);
+	}
+}

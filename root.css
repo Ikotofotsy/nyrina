@@ -1,0 +1,54 @@
+*,::before,::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	scroll-behavior: smooth;
+	font-family: 'Poppins';
+}
+
+:root{
+	--text-color-sombre : rgb(153, 153, 153);
+}
+
+@font-face {
+	font-family: titre;
+	src: url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+}
+
+p{
+	font-size: 1.5rem;
+}
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+body{
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading{
+	text-align: center;
+	font-size: 4.5rem ;
+}
+
+.heading span{
+	color: var(--text-color-1);
+}
+
+h3{
+	font-size: 2.6rem;
+	color: var(--text-color-sombre);
+}
+
+h4{
+	font-size: 2rem;
+}
+
+li{
+	list-style: none;
+}

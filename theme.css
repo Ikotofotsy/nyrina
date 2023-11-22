@@ -1,0 +1,64 @@
+/*==========================THEMES==========================*/
+.themes{
+	position: fixed;
+	top:9rem;
+	right: 0;
+	z-index: 200;
+	background: #fff;
+	padding: 1rem;
+	box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+.select-color{
+	position: fixed;
+	top: 16rem;
+	right: -30px;
+	z-index: 199;
+	height: 12rem;
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	transition: .6s ease-in-out;
+}
+
+.select-color-animation-0{
+	transform: translate(-40px);
+}
+.select-color-animation-1{
+	transform: translate(30px);
+}
+
+
+.themes div,.select-color div{
+	cursor: pointer;
+}
+.themes-DC img, .select-color div ,.themes-colors img{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+}
+header span{
+	color:var(--text-color-1)
+}
+
+.select-color{
+	
+}
+.select-color .color-1{
+	background: #53bfb6;
+}
+.select-color .color-2{
+	background: #FA5252;
+}
+.select-color .color-3{
+	background: #BD4291;
+}
+.select-color .color-4{
+	background: #FFC54D;
+}
+.select-color{
+	
+}

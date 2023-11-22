@@ -1,0 +1,32 @@
+/*===========================A PROPOS ===========================*/
+.about{
+	background: var(--second-bg-color);
+	
+}
+
+.aboutL,.aboutR{
+	display: flex;
+	margin: 4rem 0;
+}
+
+
+
+
+.skill span{
+	font-size: 1rem;
+	color: var(--text-color);
+}
+
+.about-img img{
+	width: 35vw;
+}
+
+.about-content h2{
+	text-align: left;
+	line-height: 1.2;
+}
+
+
+.about-content p{
+	margin: 2rem 0 3rem;
+}

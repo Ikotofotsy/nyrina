@@ -1,0 +1,45 @@
+.list-formation, .list-experience{
+}
+
+.item-formation,.item-experience{
+    background-color: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    margin: 30px 0 ;
+    padding: 10px;
+}
+
+.media{
+    flex-basis: 30%;
+}
+
+.media img{
+    width: 100%;
+}
+
+.information{
+    flex-basis: 60%;
+}
+
+.item-experience a, .item-formation a{
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+.item-experience li, .item-formation li{
+    font-size: 1.5rem;
+}
+
+.item-experience li:first-child, .item-formation li:first-child{
+    color: var(--text-color-1);
+    font-weight: bolder;
+}
+.item-experience li:nth-child(2), .item-formation li:nth-child(2){
+    font-style: italic;
+}
+.item-experience p, .item-formation p{
+    margin: 10px 0;
+    color: var(--text-color-sombre);
+}
+
